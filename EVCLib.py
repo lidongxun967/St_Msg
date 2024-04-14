@@ -64,9 +64,6 @@ index = """
             padding-top: 10px;
         }
         .message-content {
-            border-top: 5px solid;
-            border-image: linear-gradient(to right, #4ec1ff52, #004377);
-            border-image-slice: 1;
             padding-top: 10px;
         }
         .reminder {
