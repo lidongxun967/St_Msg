@@ -86,7 +86,7 @@ index = """
         <div class="message">
             <p>!User_Message!</p>
             <div class="message-content">
-        </div>
+        </div><div class="message"></div>
         <div class="reminder">
             <p>本邮件为自动发送，回复信息不能与发送者交流。</p>
             <p>你收到此消息是因为你被管理员认为是该工作室管理员，如有疑问，联系 1985409711@qq.com</p>
