@@ -15,9 +15,12 @@ if isV(emt) and txt:
 elif not isV(emt):
   st.toast("无效的邮件地址！",icon="❌")
   et = st.button('发送',disabled=True)
+  st.stop()
 elif not txt:
   st.toast("留言内容空！",icon="❌")
   et = st.button('发送',disabled=True)
+  st.stop()
+  
 
 
 if et: #APIKEY在Streamlit Secrets中提供
