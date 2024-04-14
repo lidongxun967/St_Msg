@@ -17,6 +17,7 @@ elif not isV(emt):
   et = st.button('发送',disabled=True)
 elif not txt:
   st.toast("留言内容空！",icon="❌")
+  et = st.button('发送',disabled=True)
 
 
 if et: #APIKEY在Streamlit Secrets中提供
