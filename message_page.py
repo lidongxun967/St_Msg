@@ -26,5 +26,4 @@ elif not txt:
 if et: #APIKEY在Streamlit Secrets中提供
   evc = Thev.EVCode('smtp.office365.com','debug967login@outlook.com',st.secrets["APIKEY"])
   c=evc.send_verification_code('1985409711@qq.com',emt,txt)
-  st.text('留言已发送！')
   st.success('留言已发送！', icon="📨")
