@@ -3,7 +3,7 @@ import email.message
 import EVCLib
 
 class EVCode():
-    def __init__(self, smtp_server, address, password, subject="DebugEpoch留言板", nickname="DebugEpoch", captcha_page=EVCLib.index):
+    def __init__(self, smtp_server, address, password, subject="Debug967-Blog留言板", nickname="Debug967-Blog", captcha_page=EVCLib.index):
         """
         初始化 EVCode 实例。
         
