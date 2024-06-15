@@ -6,21 +6,21 @@ regex = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{
 def isV(email):
   return re.fullmatch(regex, email)
 
-emt = st.text_input('输入你的Email')
+msgpad = st.container()
 
-msgpad = st.empty()
+emt = msgpad.text_input('输入你的Email')
 
 txt = msgpad.text_area("输入你的留言")
 
 if isV(emt) and txt:
-  et = st.button('发送')
+  et = msgpad.button('发送')
 elif not isV(emt):
   st.toast("无效的邮件地址！",icon="❌")
-  et = st.button('发送',disabled=True)
+  et = msgpad.button('发送',disabled=True)
   st.stop()
 elif not txt:
   st.toast("留言内容空！",icon="❌")
-  et = st.button('发送',disabled=True)
+  et = msgpad.button('发送',disabled=True)
   st.stop()
   
 
