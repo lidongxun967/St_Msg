@@ -6,11 +6,11 @@ regex = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{
 def isV(email):
   return re.fullmatch(regex, email)
 
-msgpad = st.container()
+emt = st.text_input('输入你的Email')
 
-emt = msgpad.text_input('输入你的Email')
+txt = st.text_area("输入你的留言")
 
-txt = msgpad.text_area("输入你的留言")
+msgpad = st.empty()
 
 if isV(emt) and txt:
   et = msgpad.button('发送')
